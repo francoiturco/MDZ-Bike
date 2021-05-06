@@ -35,7 +35,7 @@ header .seccion1{
 }
 
 header .seccion1 .logo img{
-    max-width: 250px;
+    max-width: 170px;
     min-width: 100px;
 }
 
@@ -655,6 +655,120 @@ main .main-carrito .sumatoria .confirmar-compra .campo-login .button-login:hover
     color: black;
 }
 
+/* MAIN - CREATE PRODUCT */
+
+main .crear-producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+main .crear-producto .crear-producto1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+main .crear-producto .crear-producto1 .titulo{
+    text-align: center;
+}
+
+main .crear-producto .crear-producto1 .formulario{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+main .crear-producto .crear-producto1 .formulario .seccion-izq{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    margin: 0px 10px;
+}
+
+main .crear-producto .crear-producto1 .formulario .seccion-izq .campo-ayuda{
+    margin: 5px 0px;
+}
+
+main .crear-producto .crear-producto1 .formulario .seccion-izq .campo-ayuda .input-datos{
+    width: 100%;
+}
+
+main .crear-producto .crear-producto1 .formulario .seccion-izq .campo-ayuda .input-datos{
+    width: 100%;
+}
+
+main .crear-producto .crear-producto1 .formulario .seccion-izq .campo-ayuda .input-datos1{
+    height: 200px;
+    width: 100%;
+    text-align: justify;
+}
+
+main .crear-producto .crear-producto1 .formulario .seccion-der{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: space-between;
+    margin: 0px 10px;
+    min-width: 50px;
+}
+
+main .crear-producto .crear-producto1 .formulario .seccion-der .campo-ayuda{
+    margin: 5px 0px;
+    color: grey;
+}
+
+main .crear-producto .crear-producto1 .formulario .seccion-der .campo-ayuda .rubro{
+    width: 100%;
+    color: grey;
+}
+
+main .crear-producto .crear-producto1 .formulario .seccion-der .campo-ayuda .tipo{
+    width: 100%;
+    color: grey;
+}
+
+main .crear-producto .crear-producto1 .formulario .seccion-der .campo-login{
+    margin: 5px 0px;
+}
+
+main .crear-producto .crear-producto1 .formulario .seccion-der .input-datos{
+    width: 100%;
+}
+
+
+main .crear-producto .crear-producto1 .formulario .seccion-der .campo{
+    margin: 5px 0px;
+}
+
+/*ACA*/
+
+main .crear-producto .crear-producto1 .boton-ayuda{
+    text-align: end;
+    margin: 10px 0px;
+    width: 100%;
+}
+
+main .crear-producto .crear-producto1 .boton-ayuda .button-ayuda{
+    padding: 5px 10px;
+    background-color: white;
+    color: gray;
+    border: black solid 1px;
+    width: 30%;
+    font-size: 90%;
+    transition: all 650ms;
+    margin: 20px 0px;
+}
+
+main .crear-producto .crear-producto1 .boton-ayuda .button-ayuda:hover{
+    background-color: #d7cbf5;
+    color: black;
+}
+
 /* FOOTER */
 
 /* FOOTER - TODOS */
@@ -829,6 +943,21 @@ footer .seccion7 .copyright{
         margin: 40px;
     }
 
+    /* MAIN - CREATE PRODUCT */
+
+    main .crear-producto .crear-producto1 .formulario{
+        flex-wrap: wrap;
+    }
+
+    main .crear-producto .crear-producto1 .boton-ayuda .button-ayuda{
+        width: 100%;
+    }
+
+    main .crear-producto .crear-producto1 .formulario .seccion-der .campo .insert-file{
+        font-size: 12px;
+        margin: 5px 0px;
+    }
+
     /* FOOTER TODOS */
 
     footer .seccion6 {
@@ -907,8 +1036,6 @@ footer .seccion7 .copyright{
         width: 25%;
     }
 
-    /**/
-
     main .main-carrito .sumatoria{
         justify-content: flex-end;
         align-items: flex-end;
@@ -933,8 +1060,13 @@ footer .seccion7 .copyright{
         width: 26%;
     }
 
-    /**/
+    /* MAIN - CREATE PRODUCT */
 
+    main .crear-producto .crear-producto1 .formulario .seccion-der .campo .insert-file{
+        font-size: 12px;
+        margin: 5px 0px;
+    }
+    
     /* FOOTER - TODOS */
 
     /* Alinear footer */
@@ -952,8 +1084,14 @@ footer .seccion7 .copyright{
     header .burger-menu {
         display: none;
     }
+
+    /* MAIN - CREATE PRODUCT */
+
+    main .crear-producto .crear-producto1 .formulario .seccion-der .campo .insert-file{
+        font-size: 16px;
+        margin: 5px 0px;
+    }
     
     /* FOOTER - TODOS */
-
 
 }
