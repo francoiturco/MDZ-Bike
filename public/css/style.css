@@ -1,0 +1,959 @@
+/*
+COLORES
+Logo y header: #d7cbf5
+
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+/* BODY - TODOS */
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: grey;
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+header .seccion1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .seccion1 .logo img{
+    max-width: 250px;
+    min-width: 100px;
+}
+
+header .seccion1 .search{
+    flex-grow: 0.35;
+    width: 40%;
+}
+
+header .seccion1 .search .buscar{
+    display: flex;
+    flex-wrap: nowrap;
+    align-self: center;
+    justify-content: space-between;
+    background: white;
+    color: white;
+    margin: 0;
+    border: solid 1px grey;
+    font-size: 90%;
+    width: 100%;
+}
+
+header .seccion1 .search .buscar .buscador{
+    align-self: center;
+    width: 100%;
+    border: 1px white solid;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+}
+
+header .seccion1 .search .icono_search{
+    background-color: white;
+    color: grey;
+    border: 1px white solid;
+    transition: all 650ms;
+    border-left: 1px solid grey;
+}
+
+header .seccion1 .profile{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0.2;
+    justify-content: space-around;
+    font-size: 25px;
+}
+
+header .seccion1 .profile-icono{
+    color: grey;
+    opacity: 0.8;
+    transition: all 650ms;
+}
+
+header .seccion1 .profile-icono:hover{
+    transform: scale(1.2);
+    color: black;
+}
+
+header .seccion2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px white;
+    height: 40px;
+}
+
+header .seccion2 .secciones-header a{
+    text-decoration: none;
+    color: gray;
+    transition: all 650ms;
+}
+
+header .seccion2 .secciones-header a:hover{
+    color: black;
+}
+
+/* BANNER */
+
+.banner img{
+    width: 100%;
+}
+
+/* MAIN */
+
+/* MAIN - INDEX */
+
+main .seccion4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+main .seccion4 .titulares{
+    font-size: 16px;
+    text-align: center;
+}
+
+main .seccion4 .nuevos-productos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0px;
+}
+
+main .seccion4 .producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 320px;
+    margin: 5px;
+    min-width: 250px;
+    max-width: 260px;
+    align-self: stretch;
+    transition: all 650ms;
+    /*box-shadow: 0px 0px 10px rgb(100, 100, 100);*/
+}
+
+main .seccion4 .producto:hover{
+    border: solid 1px black;
+    /*Aca colocar la visibilidad del texto de la descripccion del producto*/
+}
+
+main .seccion4 .nuevos-productos .producto .image{
+    margin: 5px 10px 0px;
+    min-width: 230px;
+    max-width: 350;
+    image-rendering: auto;
+}
+
+main .seccion4 .nuevos-productos a{
+    text-decoration: none;
+}
+
+main .seccion4 .nuevos-productos .producto .image img{
+    width: 100%;
+}
+
+main .seccion4 .nuevos-productos .producto .info-de-productos{
+    margin: 0px 10px 5px;
+    text-align: center;
+}
+
+main .seccion4 .nuevos-productos .producto .info-de-productos .precios{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main .seccion4 .nuevos-productos .producto .info-de-productos .precios .precio-nuevo{
+    margin-right: 10px;
+    color: black;
+}
+
+main .seccion4 .nuevos-productos .producto .info-de-productos .precios .precio-ant{
+    color: red;
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+
+main .seccion4 .nuevos-productos .producto .info-de-productos .descripciones h3{
+    display: none;
+}
+
+/* MAIN - REGISTER */
+
+main .formulario-registro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+main .formulario-registro .titulo-register{
+    text-align: center;
+}
+
+main .formulario-registro .campo1{
+    text-align: center;
+    margin: 5px;
+    width: 60%;
+}
+
+main .formulario-registro .campo1 .input-datos{
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+    border: black solid 1px;
+    width: 60%;
+    font-size: 90%;
+}
+
+main .formulario-registro .span-message{
+    margin: 5px;
+    font-size: 80%;
+    color: red;
+}
+
+main .formulario-registro .campo-input .titulo-register{
+    margin: 15px 0px 5px;
+    text-align: center;
+    font-size: 20px;
+}
+
+main .formulario-registro .campo-input{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+main .formulario-registro .campo-input .input-fecha{
+    align-items: center;
+    padding: 3px 10px;
+    background-color: white;
+    color: grey;
+    border: black solid 1px;
+    width: 60%;
+    font-size: 90%;
+}
+
+main .formulario-registro .campo-input .campo-fecha{
+    text-align: center;
+    padding: 5px 0px;
+}
+
+main .formulario-registro .campo .insert-file{
+    margin: 10px 0px;
+}
+
+main .formulario-registro .opciones-perfil-usuario-register{
+    margin: 10px;
+    font-size: 16px;
+}
+
+main .formulario-registro .opciones-perfil-usuario-register a{
+    text-decoration: none;
+    color: grey;
+}
+
+main .formulario-registro .campo1 .button-register{
+    padding: 5px 10px;
+    background-color: white;
+    color: gray;
+    border: black solid 1px;
+    width: 60%;
+    font-size: 90%;
+    transition: all 650ms;
+}
+
+main .formulario-registro .campo1 .button-register:hover{
+    background-color: #d7cbf5;
+    color: black;
+}
+
+/* MAIN - LOGIN */
+
+main .formulario-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+main .formulario-login .campo-login{
+    text-align: center;
+    margin: 5px;
+    width: 60%;
+}
+
+main .formulario-login .campo-login .input-datos{
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+    border: black solid 1px;
+    width: 60%;
+    font-size: 90%;
+}
+
+main .formulario-login .opciones-perfil-usuario-login{
+    margin: 5px;
+    font-size: 16px;
+}
+
+main .formulario-login .span-message{
+    margin: 5px;
+    font-size: 80%;
+    color: red;
+}
+
+main .formulario-login .campo-login .button-login{
+    padding: 5px 10px;
+    background-color: white;
+    color: gray;
+    border: black solid 1px;
+    width: 60%;
+    font-size: 90%;
+    transition: all 650ms;
+}
+
+main .formulario-login .campo-login .button-login:hover{
+    background-color: #d7cbf5;
+    color: black;
+}
+
+/* MAIN - NECESITO AYUDA */
+
+main .ayuda .formulario-ayuda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+
+main .ayuda .formulario-ayuda .titulo-ayuda{
+    font-size: 16px;
+}
+
+main .ayuda .formulario-ayuda .campo-ayuda{
+    text-align: center;
+    width: 70%;
+    margin: 5px 0px;
+}
+
+main .ayuda .formulario-ayuda .campo-ayuda .input-datos{
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+    border: black solid 1px;
+    width: 60%;
+}
+
+main .ayuda .formulario-ayuda .campo-ayuda{
+    margin: 10px 0px;
+}
+
+main .ayuda .formulario-ayuda .campo-ayuda .opciones-perfil-usuario{
+    margin: 10px 0px;
+}
+
+main .ayuda .formulario-ayuda .campo-ayuda .input-datos1{
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+    border: black solid 1px;
+    width: 60%;
+    height: 200px;
+}
+
+main .ayuda .formulario-ayuda .span-message{
+    margin-top: 20px;
+    font-size: 80%;
+    color: red;
+}
+
+main .ayuda .formulario-ayuda .boton-ayuda{
+    text-align: center;
+    width: 70%;  
+}
+
+main .ayuda .formulario-ayuda .boton-ayuda .button-ayuda{
+    padding: 5px 10px;
+    background-color: white;
+    color: gray;
+    border: black solid 1px;
+    width: 60%;
+    font-size: 90%;
+    transition: all 650ms;
+    margin: 20px 0px;
+}
+
+main .ayuda .formulario-ayuda .boton-ayuda .button-ayuda:hover{
+    background-color: #d7cbf5;
+    color: black;
+}
+
+/* MAIN - PRODUCT DETAIL */
+
+main .seccion-principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+    align-items: stretch;
+}
+
+main .seccion-principal .imagenes-producto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main .seccion-principal .imagenes-producto .imagenes-laterales{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    width: 100px;
+}
+
+main .seccion-principal .imagenes-producto .imagenes-laterales .miniatura img{
+    width: 80%;
+    margin: 10px;
+
+}
+
+main .seccion-principal .imagenes-producto .imagen-principal img{
+    width: 100%;
+}
+
+main .seccion-principal .detalles-compra{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
+}
+
+main .seccion-principal .detalles-compra .titulo-producto .titulo{
+    font-size: 24px;
+    color: black;
+    font-weight: 700;
+}
+
+main .seccion-principal .detalles-compra .titulo-producto .precios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .seccion-principal .detalles-compra .titulo-producto .precios .precio-nuevo{
+    font-size: 22px;
+    color: black;
+    font-weight: 700;
+}
+
+main .seccion-principal .detalles-compra .titulo-producto .precios .precio-ant{
+    font-size: 16px;
+    color: red;
+    text-decoration: line-through;
+}
+
+main .seccion-principal .detalles-compra .botones {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+
+main .seccion-principal .detalles-compra .botones .campo-login {
+    text-align: center;
+    margin: 5px;
+    width: 100%;
+}
+
+main .seccion-principal .detalles-compra .botones .campo-login .input-datos {
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+    border: black solid 1px;
+    width: 100%;
+}
+
+main .seccion-principal .detalles-compra .botones .campo-login .button-login{
+    padding: 5px 10px;
+    background-color: white;
+    color: gray;
+    border: black solid 1px;
+    width: 100%;
+    font-size: 90%;
+    transition: all 650ms;
+}
+
+main .seccion-principal .detalles-compra .botones .campo-login .button-login:hover{
+    background-color: #d7cbf5;
+    color: black;
+}
+
+main .seccion-principal .detalles-compra .titulo-producto .botones .boton .botton-enviar:hover{
+    background-color: #d7cbf5;
+    color: black;
+}
+
+main .seccion-detalles{
+    font-size: 14px;
+    color: black;
+}
+
+/* MAIN - PRODUCT CART */
+
+main .main-carrito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+main .main-carrito .carrito{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+}
+
+main .main-carrito .carrito .item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    border-bottom: grey solid 2px;
+    margin: 5px;
+}
+
+main .main-carrito .carrito .item .imagen img{
+    margin: 5px;
+    width: 200px;
+    background-position: center;
+}
+
+main .main-carrito .carrito .item .descripccion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-carrito .carrito .item .descripccion .nombre-producto p{
+    color: black;
+    font-weight: 700;
+}
+
+main .main-carrito .carrito .item .descripccion .modificar .campo-login{
+    text-align: center;
+    margin: 5px;
+    width: 100%;
+}
+
+main .main-carrito .carrito .item .descripccion .modificar .campo-login .input-datos{
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+    border: black solid 1px;
+    width: 90%;
+}
+
+main .main-carrito .carrito .item .descripccion .modificar .campo-login .button-login{
+    padding: 5px 10px;
+    background-color: white;
+    color: gray;
+    border: black solid 1px;
+    width: 90%;
+    font-size: 90%;
+    transition: all 650ms;
+}
+
+main .main-carrito .carrito .item .descripccion .modificar .campo-login .button-login:hover{
+    background-color: #d7cbf5;
+    color: black;
+}
+
+main .main-carrito .carrito .item .descripccion .precio-envio .precio-compra {
+    color: black;
+    font-weight: 500;
+}
+
+main .main-carrito .carrito .item .descripccion .precio-envio .tipo-envio {
+    color: black;
+    font-weight: 700;
+}
+
+main .main-carrito .sumatoria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+main .main-carrito .sumatoria .total p{
+    color: black;
+    font-weight: 700;
+}
+
+main .main-carrito .sumatoria .confirmar-compra {
+    width: 100%;
+}
+
+main .main-carrito .sumatoria .confirmar-compra .campo-login {
+    text-align: center;
+    margin: 5px;
+    width: 100%;
+}
+
+main .main-carrito .sumatoria .confirmar-compra .campo-login .button-login {
+    padding: 5px 10px;
+    background-color: white;
+    color: gray;
+    border: black solid 1px;
+    width: 100%;
+    font-size: 90%;
+    transition: all 650ms;
+}
+
+main .main-carrito .sumatoria .confirmar-compra .campo-login .button-login:hover{
+    background-color: #d7cbf5;
+    color: black;
+}
+
+/* FOOTER */
+
+/* FOOTER - TODOS */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+}
+
+footer .seccion6{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+footer .seccion6 .mensaje {
+    max-width: 300px;
+    margin: 0px 20px;
+    flex-grow: 0.25;
+}
+
+footer .seccion6 .mensaje .titulo-footer {
+    font-size: 20px;
+    color: black;
+}
+
+footer .seccion6 .mensaje .links-footer .links {
+    margin: 10px 0px;
+}
+
+footer .seccion6 .mensaje .links-footer .links .texto-link{
+    color: grey;
+    text-decoration: none;
+    transition: all 650ms;
+}
+
+footer .seccion6 .mensaje .links-footer .links .texto-link:hover{
+    color: black;
+}
+
+footer .seccion6 .mensaje .links-footer .links .icono-link{
+    color: grey;
+    font-size: 30px;
+    transition: all 650ms;
+}
+
+footer .seccion6 .mensaje .links-footer .links .icono-link:hover{
+    color: black;
+}
+
+footer .seccion6 .mensaje .mensaje-datos{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer .seccion6 .mensaje .mensaje-datos:hover{
+    color: black;
+}
+
+footer .seccion6 .mensaje .mensaje-datos .info_titulo{
+    margin: 5px 10px;
+}
+
+footer .seccion6 .mensaje .iconos-redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer .seccion6 .mensaje .iconos-redes .icono-redes .icono-link {
+    font-size: 30px;
+    color: grey;
+    transition: all 650ms;
+}
+
+footer .seccion6 .mensaje .iconos-redes .icono-redes .icono-link:hover {
+    color: black;
+}
+
+footer .seccion7 .copyright{
+    text-align: center;
+    color: black;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 360px){
+
+    /* HEADER - TODOS */
+
+    header .seccion1 .logo img{
+        max-width: 150px;
+        min-width: 100px;
+    }
+
+    header .seccion1 .search{
+        padding-right: 10px;
+    }
+
+    header .burger-menu {
+        text-align: center;
+        margin: 15px 0px;
+    }
+    
+    header .burger-menu i {
+        padding:8px;
+        text-align: center;
+        border-radius: 8px;
+        background-color: #d7cbf5;
+        color: white;
+    }
+    
+    header .seccion2 {
+        display: none;
+    }
+
+    /* MAIN */
+
+    /* MAIN - LOGIN */
+
+    main .formulario-login .campo-login .input-datos{
+        width: 100%;
+        font-size: 90%;
+    }
+
+    main .formulario-login .campo-login .button-login{
+        width: 100%;
+        font-size: 90%;
+    }
+
+    main .formulario-registro .campo1 .button-register{
+        width: 100%;
+        font-size: 90%;
+    }
+
+    /* MAIN - REGISTER */
+
+    main .formulario-registro .campo1 .input-datos{
+        width: 100%;
+        font-size: 90%;
+    }
+
+    main .formulario-registro .campo-input .input-fecha{
+        width: 100%;
+        font-size: 90%;
+    }
+
+    /* MAIN - PRODUCT DETAIL */
+
+    main .seccion-principal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    main .seccion-principal .detalles-compra{
+        width: 90%;
+    }
+
+    main .seccion-principal .imagenes-producto{
+        margin: 20px;
+    }
+    
+    main .seccion-detalles{
+        margin: 40px;
+    }
+
+    /* FOOTER TODOS */
+
+    footer .seccion6 {
+        text-align: center;
+    }
+
+    footer .seccion6 .mensaje .mensaje-datos{
+        justify-content: center;
+    }
+
+    footer .seccion6 .mensaje .mensaje-datos{
+        justify-content: center;
+    }
+
+    footer .seccion6 .mensaje .mensaje-datos .info_titulo{
+        max-width: 200px;
+    }
+
+}
+
+@media (min-width: 361px){
+
+    /* HEADER TODOS */
+
+    header .seccion1 .search{
+        flex-grow: 0.35;
+        width: 40%;
+    }
+
+    header .seccion2 a{
+        font-size: 12px;
+    }
+
+    header .burger-menu {
+        display: none;
+    }
+
+    /* MAIN */
+
+    /* MAIN - PRODUCT DETAIL */
+    
+    main .seccion-detalles{
+        margin: 0px 100px;
+    }
+
+    /* MAIN - PRODUCT CART */
+
+    main .main-carrito .carrito .item{
+        flex-direction: row;
+    }
+    
+    main .main-carrito .carrito .item .imagen{
+        width: 20%;
+    }
+
+    main .main-carrito .carrito .item .imagen img{
+        width: 100%;
+    }
+    
+    main .main-carrito .carrito .item .descripccion{
+        flex-direction: row;
+        width: 80%;
+        justify-content: space-around;
+    }
+
+    main .main-carrito .carrito .item .descripccion .nombre-producto{
+        text-align: justify;
+        width: 30%;
+    }
+
+    main .main-carrito .carrito .item .descripccion .modificar{
+        width: 20%;
+    }
+
+    main .main-carrito .carrito .item .descripccion .precio-envio{
+        width: 25%;
+    }
+
+    /**/
+
+    main .main-carrito .sumatoria{
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 90%;
+    }
+    
+    main .main-carrito .sumatoria .total{
+        width: 26%;
+    }
+    
+    main .main-carrito .sumatoria .total p{
+        color: black;
+        font-weight: 700;
+    }
+    
+    main .main-carrito .sumatoria .total .precio-compra{
+        width: 100%;
+        text-align: center;
+    }
+
+    main .main-carrito .sumatoria .confirmar-compra {
+        width: 26%;
+    }
+
+    /**/
+
+    /* FOOTER - TODOS */
+
+    /* Alinear footer */
+
+}
+
+@media (min-width: 769px){
+
+    /* HEADER - TODOS */
+
+    header .seccion2 a{
+        font-size: 16px;
+    }
+    
+    header .burger-menu {
+        display: none;
+    }
+    
+    /* FOOTER - TODOS */
+
+
+}
