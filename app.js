@@ -2,8 +2,6 @@ const express = require("express");
 const path = require("path");
 const app = express();
 
-const port = ;
-
 app.use(express.static(path.resolve(__dirname, "./public")));
 
 app.get("/", (req, res) => {
@@ -36,5 +34,5 @@ app.get("/necesitoAyuda", (req, res) => {
 
 app.listen(process.env.PORT || 3001, () =>
   console.log(`Servidor corriendo en http://localhost:${port} ... \n(Ctrl+click para ir a la pagina)`
-  );
+  )
 );
