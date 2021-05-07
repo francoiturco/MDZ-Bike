@@ -26,6 +26,17 @@ header{
     background-color: white;
 }
 
+header .mensaje-footer{
+    text-align: center;
+    background-color: red;
+}
+
+header .mensaje-footer p{
+    font-size: 14px;
+    color: white;
+    margin: 5px 0px;
+}
+
 header .seccion1{
     display: flex;
     flex-direction: row;
@@ -767,6 +778,14 @@ main .crear-producto .crear-producto1 .boton-ayuda .button-ayuda{
 main .crear-producto .crear-producto1 .boton-ayuda .button-ayuda:hover{
     background-color: #d7cbf5;
     color: black;
+}
+
+/* MAIN - TRABAJA CON NOSOTROS */
+
+main .main-trabaja .formulario-registro .campo1 .input-datos1{
+    height: 250px;
+    width: 60%;
+    border: black solid 1px;
 }
 
 /* FOOTER */

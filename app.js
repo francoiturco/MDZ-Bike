@@ -36,6 +36,10 @@ app.get("/createProduct", (req, res) => {
   res.sendFile(path.join(__dirname, "./views/createProduct.html"));
 });
 
-app.listen(process.env.PORT || 3000, () =>
+app.get("/trabajaConNosotros", (req, res) => {
+  res.sendFile(path.join(__dirname, "./views/trabajaConNosotros.html"));
+});
+
+app.listen(process.env.PORT || 3001, () =>
   console.log('Servidor corriendo')
 );
