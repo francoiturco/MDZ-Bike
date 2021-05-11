@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head') %>
+  <body>
+    <%- include('partials/header') %>
+    <section class="banner">
+    <img src="../images/banners/21.1.png" alt="banner" width="100%">
+    </section>
+    <main>
+        <section class="ayuda">
+            <form class="formulario-ayuda" action="/home" method="GET">
+                <div class="titulo-ayuda">
+                    <h2>¿En que podemos ayudarte?</h2>
+                </div>
+                <div class="campo-ayuda">
+                    <label class="label-input" for="name">
+                    <input class="input-datos" type="text" name="nombre" id="name" placeholder="Nombre y apellido" required>
+                    </label>
+                </div>
+                <div class="campo-ayuda">
+                    <label class="label-input" for="name">
+                    <input class="input-datos" type="text" name="nombre" id="name" placeholder="Correo electronico" required>
+                    </label>
+                </div>
+                <div class="campo-ayuda">
+                    <label class="label-input" for="name">
+                    <input class="input-datos1" type="text" name="nombre" id="name" placeholder="Escribi tus comentarios..." required>
+                    </label>
+                </div>
+                <div class="span-message">
+                    <span class="feedback">(SPAN) Los 3 campos son requeridos</span>
+                </div>
+                <div class="boton-ayuda">
+                    <a class="botton-enviar" href="/home"><button class="button-ayuda">Enviar Mensaje</button></a>
+                </div>
+            </form>
+        </section>
+    </main>
+    <section class="banner">
+        <img src="../images/banners/12.1.jpg" alt="banner" width="100%">
+    </section>
+    <%- include('partials/footer') %>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <%- include('partials/head') %>
+  <body>
+    <%- include('partials/header') %>
+    <section class="banner">
+      <img src="../images/banners/15.1.jpg" alt="banner" width="100%">
+    </section>
+    <main>
+      <section class="main-trabaja">
+        <form action="/home" method="GET" class="formulario-registro">
+          <div class="titulo-register">
+              <h2>Envianos tu CV</h2>
+          </div>
+          <div class="campo1">
+              <label class="label-input" for="name">
+              <input class="input-datos" type="text" name="nombre" id="name" placeholder="Nombre y apellido" required>
+              </label>
+          </div>
+          <div class="campo1">
+              <label class="label-input" for="user-name">
+              <input class="input-datos" type="text" name="nombreDeUsuario" id="user-name" placeholder="Direccion de correo electronico" required>
+          </label>
+          </div>
+          <div class="campo">
+              <div class="titulo-register">
+                  <label>Adjunta tu CV</label>
+              </div>
+              <div class="insert-file">
+                  <input type="file" name="foto-usuario" accept=".jpg" required>
+              </div>
+          </div>
+          <div class="campo1">
+              <label class="label-input" for="comentarios">
+              <input class="input-datos1" type="password" name="conf-contraseña-usuario" id="comentarios" placeholder="Comentanos en que podes sumar..." required>
+              </label>
+          </div>
+          <div class="campo1">
+              <a href="/home"><button class="button-register">Registrarme</button></a>
+          </div>
+        </form>
+      </section>
+    </main>
+    <section class="banner">
+      <img src="../images/banners/8.1.jpg" alt="banner" width="100%">
+    </section>
+    <%- include('partials/footer') %>
+  </body>
+</html>

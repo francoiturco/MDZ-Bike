@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <%- include('partials/head') %>
+  <body>
+    <%- include('partials/header') %>
+    <section class="banner">
+      <img src="../images/banners/24.1.jpg" alt="banner" width="100%">
+    </section>
+    <main>
+      <section class="crear-producto">
+        <section class="crear-producto1">
+          <div class="titulo">
+            <h2>Crear/Modificar producto</h2>
+          </div>
+          <form class="formulario" action="/home" method="GET">
+            <div class="seccion-izq">
+              <div class="campo-ayuda">
+                <label class="label-input" for="name">
+                <input class="input-datos" type="text" name="nombre" id="name" placeholder="Titulo producto" required>
+                </label>
+              </div>
+              <div class="campo-ayuda">
+                <label class="label-input" for="name">
+                <input class="input-datos1" type="text" name="nombre" id="name" placeholder="Descripccion" required>
+                </label>
+              </div>
+            </div>
+            <div class="seccion-der">
+              <div class="campo-ayuda">
+                <select class="rubro" name="rubro" id="">
+                  <option value="0">Seleccionar</option>
+                  <option value="1">Bicicletas</option>
+                  <option value="2">Cascos</option>
+                  <option value="3">Indumentaria</option>
+                  <option value="4">Componentes y repuestos</option>
+                  <option value="5">Accesorios</option>
+                  <option value="6">Promociones</option>
+                </select>
+              </div>
+              <div class="campo-ayuda">
+                <select class="tipo" name="tipo" id="">
+                  <option value="0">Seleccionar</option>
+                  <option value="1">MTB</option>
+                  <option value="2">Road</option>
+                  <option value="3">DH</option>
+                  <option value="4">BMX</option>
+                  <option value="5">Trial</option>
+                  <option value="6">Cicloturismo</option>
+                  <option value="7">Paseo</option>
+                </select>
+              </div>
+              <div class="campo-ayuda">
+                <label class="label-input" for="name">
+                <input class="input-datos" type="text" name="nombre" id="name" placeholder="Precio" required>
+                </label>
+              </div>
+              <div class="campo-login">
+                <label class="label-input" for="cantidad">
+                <input class="input-datos" type="number" min="1"placeholder="1" name="nombre" id="cantidad">
+                </label>
+              </div>
+              <div class="campo">
+              <div class="titulo-register">
+                  <label>Fotos del producto</label>
+              </div>
+              <div class="insert-file">
+                  <input type="file" name="foto-producto" accept=".jpg, .png" required>
+              </div>
+              </div>
+            </div>
+          </form>
+          <div class="boton-ayuda">
+            <a class="botton-enviar" href="/home"><button class="button-ayuda">Confirmar</button></a>
+          </div>
+        </section>
+      </section>
+    </main>
+    <section class="banner">
+      <img src="../images/banners/25.1.jpg" alt="banner" width="100%">
+    </section>
+    <%- include('partials/footer') %>
+  </body>
+</html>

@@ -91,17 +91,23 @@ header .seccion1 .profile{
     flex-grow: 0.2;
     justify-content: space-around;
     font-size: 25px;
+    align-items: center;
 }
 
 header .seccion1 .profile-icono{
     color: grey;
     opacity: 0.8;
     transition: all 650ms;
+    text-decoration: none;
 }
 
 header .seccion1 .profile-icono:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     color: black;
+}
+
+header .seccion1 .profile-icono p{
+    font-size: 16px;
 }
 
 header .seccion2{
@@ -161,7 +167,10 @@ main .seccion4 .producto{
     justify-content: space-between;
     align-items: center;
     background-color: white;
+    /*Esta es la altura de los productos*/
+    /*
     height: 320px;
+    */
     margin: 5px;
     min-width: 250px;
     max-width: 260px;
@@ -173,6 +182,10 @@ main .seccion4 .producto{
 main .seccion4 .producto:hover{
     border: solid 1px black;
     /*Aca colocar la visibilidad del texto de la descripccion del producto*/
+}
+
+main .seccion4 .producto:hover h3{
+    opacity: 1;
 }
 
 main .seccion4 .nuevos-productos .producto .image{
@@ -213,7 +226,9 @@ main .seccion4 .nuevos-productos .producto .info-de-productos .precios .precio-a
 }
 
 main .seccion4 .nuevos-productos .producto .info-de-productos .descripciones h3{
-    display: none;
+    font-size: 14px;
+    color: grey;
+    opacity: 0;
 }
 
 /* MAIN - REGISTER */

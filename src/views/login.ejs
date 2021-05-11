@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <%- include('partials/head') %>
+  <body>
+    <%- include('partials/header') %>
+    <section class="banner">
+      <img src="../images/banners/20.1.png" alt="banner" width="100%">
+    </section>
+    <main class="main-register-login">
+      <form class="formulario-login" action="/home" method="GET">
+          <div class="titulo-login">
+              <h2>¡Ingresá!</h2>
+          </div>
+          <div class="campo-login">
+              <label class="label-input" for="name">
+              <input class="input-datos" type="text" name="nombre" id="name" placeholder="Nombre y apellido" required>
+              </label>
+          </div>
+          <div class="campo-login">
+              <label class="label-input" for="contraseña">
+              <input class="input-datos" type="password" name="contraseña-usuario" id="contraseña" placeholder="Contraseña" required>
+              </label>
+          </div>
+          <div class="opciones-perfil-usuario-login">
+              <input type="checkbox" name="perfilUsuario" id="seller">
+              <label for="seller">Permanecer conectado</label>
+          </div>
+          <div class="span-message">
+              <span class="feedback">(SPAN) Usuario o contraseña incorrectos!!!</span>
+          </div>
+          <div class="campo-login">
+              <a class="botton-enviar" href="/home"><button class="button-login">Enviar</button></a>
+          </div>
+      </form>
+    </main>
+    <section class="banner">
+      <img src="../images/banners/13.1.jpg" alt="banner" width="100%">
+    </section>
+    <%- include('partials/footer') %>
+  </body>
+</html>

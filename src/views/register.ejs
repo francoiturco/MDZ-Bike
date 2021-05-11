@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <%- include('partials/head') %>
+  <body>
+    <%- include('partials/header') %>
+    <section class="banner">
+      <img src="../images/banners/24.1.jpg" alt="banner" width="100%">
+    </section>
+    <main class="main-register">
+      <form action="/home" method="GET" class="formulario-registro">
+          <div class="titulo-register">
+              <h2>Registrate!</h2>
+          </div>
+          <div class="campo1">
+              <label class="label-input" for="name">
+              <input class="input-datos" type="text" name="nombre" id="name" placeholder="Nombre y apellido" required>
+              </label>
+          </div>
+          <div class="campo1">
+              <label class="label-input" for="user-name">
+              <input class="input-datos" type="text" name="nombreDeUsuario" id="user-name" placeholder="Direccion de correo electronico" required>
+          </label>
+          </div>
+          <div class="span-message">
+              <span class="feedback">(SPAN) Correo electronico en uso!</span>
+          </div>
+          <div class="campo-input">
+              <div class="titulo-register">
+                  <label for="user-date">Fecha de nacimiento</label>
+              </div>
+              <div class="campo-fecha">
+                  <input class="input-fecha" type="date" name="fechaNacimiento" id="user-date" required>
+              </div>
+          </div>
+          <div  class="campo1">
+              <label class="label-input" for="address">
+              <input class="input-datos" type="text" name="direccion" id="address" placeholder="Domicilio" required>
+              </label>
+          </div>
+          <div class="campo">
+              <div class="titulo-register">
+                  <label>Foto de usuario</label>
+              </div>
+              <div class="insert-file">
+                  <input type="file" name="foto-usuario" accept=".jpg" required>
+              </div>
+          </div>
+          <div class="campo1">
+              <label class="label-input" for="contraseña">
+              <input class="input-datos" type="password" name="contraseña-usuario" id="contraseña" placeholder="Contraseña" required>
+              </label>
+          </div>
+          <div class="campo1">
+              <label class="label-input" for="conf-contraseña">
+              <input class="input-datos" type="password" name="conf-contraseña-usuario" id="conf-contraseña" placeholder="Confirmar contraseña" required>
+              </label>
+          </div>
+          <div class="span-message">
+              <span class="feedback">(SPAN) Las contraseñas no coinciden!</span>
+          </div>
+          <div class="opciones-perfil-usuario-register">
+              <input type="checkbox" name="" id="seller">
+              <label for="seller">Quiero recibir novedades!</label>
+          </div>
+          <div class="opciones-perfil-usuario-register">
+            <input type="checkbox" name="" id="seller" required>
+            <a href="/#"><label for="seller">Acepto las condiciones de uso.</a>
+          </div>
+          <div class="span-message">
+              <span class="feedback">(SPAN) Tienes que aceptar las condiciones de uso!</span>
+          </div>
+          <div class="campo1">
+              <a href="/home"><button class="button-register">Registrarme</button></a>
+          </div>
+      </form>
+    </main>
+    <section class="banner">
+      <img src="../images/banners/25.1.jpg" alt="banner" width="100%">
+    </section>
+    <%- include('partials/footer') %>
+  </body>
+</html>
