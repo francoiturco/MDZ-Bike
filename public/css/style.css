@@ -156,7 +156,7 @@ main .seccion4 .nuevos-productos{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
     list-style: none;
     padding: 0px;
 }
@@ -172,8 +172,10 @@ main .seccion4 .producto{
     height: 320px;
     */
     margin: 5px;
+    /**/
     min-width: 250px;
     max-width: 260px;
+    /**/
     align-self: stretch;
     transition: all 650ms;
     /*box-shadow: 0px 0px 10px rgb(100, 100, 100);*/
@@ -181,18 +183,16 @@ main .seccion4 .producto{
 
 main .seccion4 .producto:hover{
     border: solid 1px black;
-    /*Aca colocar la visibilidad del texto de la descripccion del producto*/
-}
-
-main .seccion4 .producto:hover h3{
-    opacity: 1;
 }
 
 main .seccion4 .nuevos-productos .producto .image{
     margin: 5px 10px 0px;
-    min-width: 230px;
-    max-width: 350;
-    image-rendering: auto;
+    max-width: 260px;
+    max-height: 260px;
+}
+
+main .seccion4 .nuevos-productos .producto .image img{
+    width: 100%;
 }
 
 main .seccion4 .nuevos-productos a{
@@ -212,6 +212,9 @@ main .seccion4 .nuevos-productos .producto .info-de-productos .precios{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    /*Configuracion Nueva alto y ancho de precios*/
+    max-height: 50px;
+    max-width: 240px;
 }
 
 main .seccion4 .nuevos-productos .producto .info-de-productos .precios .precio-nuevo{
@@ -225,10 +228,17 @@ main .seccion4 .nuevos-productos .producto .info-de-productos .precios .precio-a
     margin-left: 5px;
 }
 
+main .seccion4 .nuevos-productos .producto .info-de-productos .descripciones{
+    visibility: hidden;
+}
+
+main .seccion4 .nuevos-productos .producto:hover .descripciones{
+    visibility: visible;
+}
+
 main .seccion4 .nuevos-productos .producto .info-de-productos .descripciones h3{
     font-size: 14px;
     color: grey;
-    opacity: 0;
 }
 
 /* MAIN - REGISTER */
