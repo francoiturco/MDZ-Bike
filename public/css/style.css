@@ -781,8 +781,6 @@ main .crear-producto .crear-producto1 .formulario .seccion-der .campo{
     margin: 5px 0px;
 }
 
-/*ACA*/
-
 main .crear-producto .crear-producto1 .boton-ayuda{
     text-align: end;
     margin: 10px 0px;
@@ -803,6 +801,37 @@ main .crear-producto .crear-producto1 .boton-ayuda .button-ayuda{
 main .crear-producto .crear-producto1 .boton-ayuda .button-ayuda:hover{
     background-color: #d7cbf5;
     color: black;
+}
+
+main .crear-producto .crear-producto1 .formulario .seccion-izq .buscar{
+    display: flex;
+    flex-wrap: nowrap;
+    align-self: center;
+    justify-content: space-between;
+    background: white;
+    color: white;
+    margin: 0;
+    border: solid 1px grey;
+    font-size: 100%;
+    width: 100%;
+    margin: 5px;
+}
+
+main .crear-producto .crear-producto1 .formulario .seccion-izq .buscar .buscador{
+    align-self: center;
+    width: 100%;
+    border: 1px white solid;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+}
+
+main .crear-producto .crear-producto1 .formulario .seccion-izq .buscar .icono_search{
+    background-color: white;
+    color: grey;
+    border: 1px white solid;
+    transition: all 650ms;
+    border-left: 1px solid grey;
 }
 
 /* MAIN - TRABAJA CON NOSOTROS */
