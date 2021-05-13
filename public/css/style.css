@@ -1155,7 +1155,8 @@ footer .seccion7 .copyright{
     }
 
     main .main-carrito .carrito .item .imagen img{
-        width: 100%;
+        width: 90%;
+        margin: 0px 5px;
     }
     
     main .main-carrito .carrito .item .descripccion{
@@ -1165,16 +1166,22 @@ footer .seccion7 .copyright{
     }
 
     main .main-carrito .carrito .item .descripccion .nombre-producto{
+        font-size: 12px;
         text-align: justify;
         width: 30%;
     }
 
-    main .main-carrito .carrito .item .descripccion .modificar{
-        width: 20%;
+    main .main-carrito .carrito .item .descripccion .precio-envio{
+        font-size: 12px;
+        width: 25%;
     }
 
-    main .main-carrito .carrito .item .descripccion .precio-envio{
-        width: 25%;
+    main .main-carrito .carrito .item .descripccion .modificar .campo-login .input-datos{
+        font-size: 12px;
+    }
+
+    main .main-carrito .carrito .item .descripccion .modificar .campo-login .button-login{
+        font-size: 12px;
     }
 
     main .main-carrito .sumatoria{
@@ -1259,6 +1266,28 @@ footer .seccion7 .copyright{
         margin: 0px 50px
     }
     
+    /* MAIN - PRODUCT CART*/
+
+    main .main-carrito .carrito .item .descripccion .nombre-producto{
+        font-size: 16px;
+        text-align: justify;
+        width: 30%;
+    }
+
+    main .main-carrito .carrito .item .descripccion .precio-envio{
+        font-size: 16px;
+        width: 25%;
+    }
+
+    main .main-carrito .carrito .item .descripccion .modificar .campo-login .input-datos{
+        font-size: 16px;
+    }
+
+    main .main-carrito .carrito .item .descripccion .modificar .campo-login .button-login{
+        font-size: 16px;
+    }
+
+
     /* FOOTER - TODOS */
 
 }
