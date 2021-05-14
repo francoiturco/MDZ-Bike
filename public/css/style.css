@@ -1096,6 +1096,12 @@ footer .seccion7 .copyright{
         font-size: 12px;
         margin: 5px 0px;
     }
+    
+    /* MAIN - NECESITO AYUDA */
+
+    main .main-trabaja .formulario-registro .campo1 .input-datos1{
+        width: 100%;
+    }
 
     /* FOOTER TODOS */
 
