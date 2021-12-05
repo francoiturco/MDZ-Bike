@@ -27,6 +27,10 @@
 [Ebay](https://www.ebay.com/)
 >Una de las paginas mas conocidas para comprar productos nuevos y usados.
 
-### Quienes soy? 
+### Quien soy? 
 
->Mi nombre es Franco Turco, tengo 28 años, soy pasante de QA de Automation y estudiante de Digital House.
+>Mi nombre es Franco Turco, tengo 28 años, soy QA y entusiasta de la programación.
+
+### Heroku 
+
+> [MDZ Bike](http://mdz-bike.herokuapp.com/)

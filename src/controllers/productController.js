@@ -1,15 +1,21 @@
 const path = require("path");
 
 let controller = {
-    productCart: (req, res) => {
+    viewproductCart: (req, res) => {
         res.render('productCart');
     },
-    productDetail:(req, res) => {
+    viewproductDetail:(req, res) => {
         res.render('productDetail');
     },
-    createProduct:(req, res) => {
+    viewcreateProduct:(req, res) => {
         res.render('createProduct');
     },
+    viewmodifyProduct:(req, res) => {
+        res.render('modifyProduct');
+    },
+    storeCreateProduct : (req, res) =>{
+        res.send(res.body);
+    }
 
 }
 

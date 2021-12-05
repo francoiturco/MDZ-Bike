@@ -10,18 +10,22 @@
       <section class="crear-producto">
         <section class="crear-producto1">
           <div class="titulo">
-            <h2>Crear producto</h2>
+            <h2>Modificar producto</h2>
           </div>
-          <form class="formulario" action="/product/create" method="POST">
+          <form class="formulario" action="/home" method="GET">
             <div class="seccion-izq">
+              <div class = "buscar">
+                <label for="" class="barra-buscar"></label>
+                <input class="buscador" type="text" id="barra-buscar" placeholder="Buscar producto" required><button class="icono_search"><i class="fas fa-search"></i></button>
+              </div>
               <div class="campo-ayuda">
                 <label class="label-input" for="name">
-                <input class="input-datos" type="text" name="titulo" id="name" placeholder="Titulo producto" required>
+                <input class="input-datos" type="text" name="nombre" id="name" placeholder="Titulo producto" required>
                 </label>
               </div>
               <div class="campo-ayuda">
                 <label class="label-input" for="name">
-                <input class="input-datos1" type="text" name="descripcion" id="name" placeholder="Descripcion" required>
+                <input class="input-datos1" type="text" name="nombre" id="name" placeholder="Descripccion" required>
                 </label>
               </div>
             </div>
@@ -64,14 +68,14 @@
                   <label>Fotos del producto</label>
               </div>
               <div class="insert-file">
-                  <input type="file" name="foto-producto" accept=".jpg, .png">
+                  <input type="file" name="foto-producto" accept=".jpg, .png" required>
               </div>
               </div>
-            </div>
-            <div class="boton-ayuda">
-              <input class="button-ayuda" type="submit" value="Confirmar">
             </div>
           </form>
+          <div class="boton-ayuda">
+            <a class="botton-enviar" href="/home"><button class="button-ayuda">Confirmar</button></a>
+          </div>
         </section>
       </section>
     </main>
